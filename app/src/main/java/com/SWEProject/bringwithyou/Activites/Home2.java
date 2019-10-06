@@ -1,4 +1,5 @@
 package com.SWEProject.bringwithyou.Activites;
+import com.SWEProject.bringwithyou.Fregments.RequestFragment;
 import com.SWEProject.bringwithyou.Fregments.myOrders;
 import com.SWEProject.bringwithyou.R;
 
@@ -6,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.SWEProject.bringwithyou.Fregments.ProfileFragment;
-import com.SWEProject.bringwithyou.Fregments.SettingFragment;
+import com.SWEProject.bringwithyou.Fregments.AboutUsFragment;
 
 
 import com.SWEProject.bringwithyou.ui.home.HomeFragment;
@@ -128,15 +129,15 @@ public class Home2 extends AppCompatActivity  implements NavigationView.OnNaviga
             getSupportFragmentManager().beginTransaction().replace(R.id.container,new ProfileFragment()).commit();
         }
         else if (id==R.id.nav_settings){
-            getSupportActionBar().setTitle("Setting");
-            getSupportFragmentManager().beginTransaction().replace(R.id.container,new SettingFragment()).commit();
+            getSupportActionBar().setTitle("About Us");
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,new AboutUsFragment()).commit();
 
         }
-        else if (id==R.id.nav_myrequest){
+        else if (id==R.id.nav_request){
 
            // fragment = new RequestFragment();
             getSupportActionBar().setTitle("Requests");
-           // getSupportFragmentManager().beginTransaction().replace(R.id.container,new RequestFragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.container,new RequestFragment()).commit();
 
 
         }else if (id==R.id.nav_myOrder){
